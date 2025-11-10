@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mandala Animals coloring books by Aria Silverwood. Intricate animal mandalas for relaxation and meditation, available on Amazon.">
+    <meta name="keywords" content="mandala coloring, animal mandalas, meditation coloring, adult coloring, Aria Silverwood">
+    
+    <title>Mandala Animals Series - Silverwood Coloring</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Silverwood Coloring</a>
+            <nav>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="series.html" class="active">Series</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="category-header">
+            <h1 class="section-title">Mandala Animals Series</h1>
+            <p class="category-intro">Discover the perfect blend of wildlife beauty and meditative mandala art. Each page features intricate animal designs filled with detailed mandala patterns, offering hours of relaxing and mindful coloring. Ideal for adults seeking stress relief and creative expression.</p>
+        </div>
+
+        <div class="card-grid" id="booksContainer">
+            <div class="card">
+                <p>Loading books...</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="series.html" class="btn">← Back to All Series</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-icons">
+                <span class="footer-icon" title="Amazon"></span>
+                <span class="footer-icon" title="Instagram"></span>
+                <span class="footer-icon" title="Facebook"></span>
+                <span class="footer-icon" title="TikTok"></span>
+            </div>
+            <p>&copy; 2025 Silverwood Coloring &middot; All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        const seriesName = 'mandala-animals';
+        const booksContainer = document.getElementById('booksContainer');
+
+        fetch('data/books.json')
+            .then(response => response.json())
+            .then(data => {
+                const seriesBooks = data.filter(book => book.series === seriesName);
+                
+                if (seriesBooks.length === 0) {
+                    booksContainer.innerHTML = '<div class="card"><p>No books found for this series yet. Check back soon!</p></div>';
+                    return;
+                }
+
+                booksContainer.innerHTML = '';
+                
+                seriesBooks.forEach((book, index) => {
+                    const cardColors = ['card-lavender', 'card-mint', 'card-pink', 'card-blue', 'card-yellow', 'card-peach'];
+                    const colorClass = cardColors[index % cardColors.length];
+                    
+                    const card = document.createElement('div');
+                    card.className = `card ${colorClass}`;
+                    card.innerHTML = `
+                        <div class="card-image">
+                            <img src="${book.imageUrl}" alt="${book.title}" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML='🦋';">
+                        </div>
+                        <h3>${book.title}</h3>
+                        <p>${book.shortDescription}</p>
+                        <a href="${book.amazonUrl}" target="_blank" class="btn btn-amazon">View on Amazon</a>
+                    `;
+                    booksContainer.appendChild(card);
+                });
+
+                const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+                if ('IntersectionObserver' in window) {
+                    const imageObserver = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('loaded');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    });
+                    lazyImages.forEach(img => imageObserver.observe(img));
+                } else {
+                    lazyImages.forEach(img => img.classList.add('loaded'));
+                }
+            })
+            .catch(error => {
+                console.error('Error loading books:', error);
+                booksContainer.innerHTML = '<div class="card"><p>Error loading books. Please try again later.</p></div>';
+            });
+    </script>
+</body>
+</html>
