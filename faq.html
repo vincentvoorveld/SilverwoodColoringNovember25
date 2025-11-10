@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about Silverwood Coloring books. Learn about languages, purchasing, and age suitability.">
+    <meta name="keywords" content="FAQ, coloring book questions, Aria Silverwood FAQ, Amazon coloring books">
+    
+    <title>FAQ - Silverwood Coloring</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Silverwood Coloring</a>
+            <nav>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="section-title">Frequently Asked Questions</h1>
+        <p class="section-subtitle">Find answers to common questions about our coloring books.</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are these books available in other languages?
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Many of our coloring books are available in multiple languages. Search for "kleurboek" in your language plus "Aria Silverwood" on Amazon to find books in Dutch, German, French, and other languages. We're continuously expanding our language offerings to reach colorists worldwide.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Where can I buy the books?
+                </div>
+                <div class="faq-answer">
+                    <p>All Silverwood Coloring books are available on Amazon! Simply click on any "View on Amazon" button throughout this site, or visit our Amazon author page to browse the complete collection. Amazon provides worldwide shipping and fast delivery options.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are these suitable for children?
+                </div>
+                <div class="faq-answer">
+                    <p>Many of our series are perfect for children! The Bold & Easy and Sinterklaas collections feature simple, kid-friendly designs with bold lines that are easy to color. Other series like Stained Glass and Mandala Animals are better suited for teens and adults who enjoy more intricate, detailed patterns. Each book listing on Amazon includes age recommendations to help you choose the right book.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What type of paper is used in the books?
+                </div>
+                <div class="faq-answer">
+                    <p>Our books are printed on high-quality paper designed for coloring. The paper is thick enough to prevent bleed-through when using colored pencils, markers, or gel pens. We recommend testing your preferred coloring medium on a small area first. Specific paper details are included in each book's Amazon product description.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    How many pages are in each coloring book?
+                </div>
+                <div class="faq-answer">
+                    <p>The number of pages varies by series and book. Most of our coloring books contain between 30 to 50 unique designs, providing hours of creative enjoyment. Check the specific book listing on Amazon for exact page counts and preview images.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can I leave a review?
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We love hearing from our colorists. Please leave a review on Amazon after enjoying one of our books. Your feedback helps other customers discover our work and helps us create even better coloring experiences in the future.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Are new books being released?
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We're constantly working on new series and themes. Follow us on social media or visit our Amazon author page regularly to see the latest releases. You can also check the "Other Books" section on this website for our newest and most unique collections.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="font-size: 1.1rem; color: #666;">Still have questions?</p>
+            <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-icons">
+                <span class="footer-icon" title="Amazon"></span>
+                <span class="footer-icon" title="Instagram"></span>
+                <span class="footer-icon" title="Facebook"></span>
+                <span class="footer-icon" title="TikTok"></span>
+            </div>
+            <p>&copy; 2025 Silverwood Coloring &middot; All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // FAQ Accordion functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = question.classList.contains('active');
+
+                // Close all other FAQs
+                faqQuestions.forEach(q => {
+                    q.classList.remove('active');
+                    q.nextElementSibling.classList.remove('active');
+                });
+
+                // Toggle current FAQ
+                if (!isActive) {
+                    question.classList.add('active');
+                    answer.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
