@@ -1,0 +1,111 @@
+Create a complete static website project for “Silverwood Coloring” — a brand promoting coloring books by Aria Silverwood sold on Amazon.
+
+🔧 TECH & STRUCTURE
+- Use pure HTML, CSS, and lightweight vanilla JS (no frameworks).
+- Create these files and folders:
+
+/
+|-- index.html
+|-- series.html
+|-- about.html
+|-- faq.html
+|-- contact.html
+|-- assets/
+|     |-- css/style.css
+|     |-- images/ (empty)
+|-- data/books.json
+
+💡 STYLE
+- Theme: playful and creative with soft pastel colors (think gentle pinks, light blues, warm yellows).
+- Font: “Poppins”, sans-serif.
+- Background: off-white (#faf9f7) with colorful accent blocks and rounded cards.
+- Use subtle shadows and smooth hover effects.
+- Ensure fully responsive design (desktop, tablet, mobile).
+
+🧭 NAVIGATION
+- Sticky header on all pages with logo text “Silverwood Coloring” on the left and these menu items on the right:
+  Home · Series · About · FAQ · Contact
+- Highlight the active page in the nav.
+- Footer on all pages: small text “© 2025 Silverwood Coloring · All rights reserved” + small Amazon/social icons (as placeholders).
+
+📄 PAGES
+
+1️⃣ index.html (Home)
+- Hero section with:
+  Title: “Beautiful Coloring Books for Every Imagination”
+  Subtitle: “Discover relaxing, creative and themed coloring books by Aria Silverwood.”
+  CTA button → “Explore the Series” linking to series.html
+- Featured series grid (4 cards: Sinterklaas, Stained Glass, Bold & Easy, Mandala Animals) each with:
+  – pastel-colored box with text title
+  – placeholder image area
+  – “View Collection” button.
+- Lightweight SEO meta tags: title, description, keywords.
+
+2️⃣ series.html
+- Title: “Explore All Series”
+- Grid listing these categories:
+  Sinterklaas, Stained Glass, Bold & Easy, Cities, Mandala Animals, Other Books.
+- Each links to its own detail page:
+  sinterklaas.html, stained-glass.html, bold-easy.html, cities.html, mandala-animals.html, other.html
+
+3️⃣ category pages (6 files as above)
+- Heading with category name and short intro paragraph.
+- Grid layout showing 3 example book cards.
+- Each card: image placeholder, title, short text, Amazon button (dummy link).
+- Cards load dynamically from /data/books.json via simple JS fetch.
+
+4️⃣ about.html
+- Section title: “About Silverwood Coloring”
+- Paragraph describing Aria Silverwood and the concept:
+  “Silverwood Coloring offers beautifully designed books for kids and adults — from festive Sinterklaas to relaxing mandalas and creative city scenes.”
+- Small collage placeholder area.
+- CTA button linking to Amazon author page (dummy link).
+
+5️⃣ faq.html
+- Title: “Frequently Asked Questions”
+- Use an accordion or simple list with these Q&A:
+  Q: Are these books available in other languages?  
+  A: Yes! Search for “kleurboek” in your language + Aria Silverwood on Amazon.  
+  Q: Where can I buy the books?  
+  A: All books are available on Amazon — links are provided throughout this site.  
+  Q: Are these suitable for children?  
+  A: Many series like Bold & Easy and Sinterklaas are perfect for kids, while others suit adults.
+
+6️⃣ contact.html
+- Title: “Get in Touch”
+- Text: “We’d love to hear from you! Follow Aria Silverwood or browse the full collection on Amazon.”
+- Buttons/icons (placeholders) linking to:
+  Amazon Author Page, Instagram, Facebook, TikTok.
+- mailto link: info@silverwoodcoloring.com (dummy).
+
+📁 /data/books.json
+Add a lightweight JSON file with 2-3 sample entries:
+
+[
+  {
+    "id": "sg001",
+    "title": "Stained Glass Animals",
+    "shortDescription": "Creative stained glass patterns to color.",
+    "imageUrl": "assets/images/placeholder1.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "stained-glass",
+    "language": "EN"
+  },
+  {
+    "id": "be001",
+    "title": "Bold & Easy Flowers",
+    "shortDescription": "Simple, bold designs for all ages.",
+    "imageUrl": "assets/images/placeholder2.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "bold-easy",
+    "language": "EN"
+  }
+]
+
+🧠 ADDITIONAL
+- Include SEO meta tags, open-graph tags, and alt text placeholders.
+- Optimize for fast load (lazy-loading images, compressed CSS, no external JS).
+- Include <link rel="icon" href="assets/images/favicon.png"> placeholder.
+- Ready for GitHub Pages deployment.
+
+Ensure all links between pages work correctly and all files are referenced with relative paths.
