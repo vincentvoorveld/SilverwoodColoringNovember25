@@ -1,0 +1,164 @@
+[
+  {
+    "id": "sint001",
+    "title": "Sinterklaas Coloring Fun",
+    "shortDescription": "Festive Sinterklaas scenes for joyful coloring moments.",
+    "imageUrl": "assets/images/placeholder1.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "sinterklaas",
+    "language": "EN"
+  },
+  {
+    "id": "sint002",
+    "title": "Sinterklaas Adventures",
+    "shortDescription": "Magical Sinterklaas stories brought to life through coloring.",
+    "imageUrl": "assets/images/placeholder2.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "sinterklaas",
+    "language": "NL"
+  },
+  {
+    "id": "sint003",
+    "title": "Sinterklaas & Zwarte Piet",
+    "shortDescription": "Traditional Dutch celebration scenes to color and enjoy.",
+    "imageUrl": "assets/images/placeholder3.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "sinterklaas",
+    "language": "NL"
+  },
+  {
+    "id": "sg001",
+    "title": "Stained Glass Animals",
+    "shortDescription": "Creative stained glass patterns to color.",
+    "imageUrl": "assets/images/placeholder1.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "stained-glass",
+    "language": "EN"
+  },
+  {
+    "id": "sg002",
+    "title": "Stained Glass Nature",
+    "shortDescription": "Beautiful nature scenes in stunning stained glass style.",
+    "imageUrl": "assets/images/placeholder2.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "stained-glass",
+    "language": "EN"
+  },
+  {
+    "id": "sg003",
+    "title": "Stained Glass Mandalas",
+    "shortDescription": "Intricate mandala designs with stained glass effect.",
+    "imageUrl": "assets/images/placeholder3.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "stained-glass",
+    "language": "EN"
+  },
+  {
+    "id": "be001",
+    "title": "Bold & Easy Flowers",
+    "shortDescription": "Simple, bold designs for all ages.",
+    "imageUrl": "assets/images/placeholder1.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "bold-easy",
+    "language": "EN"
+  },
+  {
+    "id": "be002",
+    "title": "Bold & Easy Animals",
+    "shortDescription": "Fun animal designs with thick, easy-to-color lines.",
+    "imageUrl": "assets/images/placeholder2.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "bold-easy",
+    "language": "EN"
+  },
+  {
+    "id": "be003",
+    "title": "Bold & Easy Patterns",
+    "shortDescription": "Stress-free coloring with bold geometric patterns.",
+    "imageUrl": "assets/images/placeholder3.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "bold-easy",
+    "language": "EN"
+  },
+  {
+    "id": "city001",
+    "title": "European Cities",
+    "shortDescription": "Explore iconic European landmarks through coloring.",
+    "imageUrl": "assets/images/placeholder1.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "cities",
+    "language": "EN"
+  },
+  {
+    "id": "city002",
+    "title": "World Capitals",
+    "shortDescription": "Famous cityscapes from around the world.",
+    "imageUrl": "assets/images/placeholder2.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "cities",
+    "language": "EN"
+  },
+  {
+    "id": "city003",
+    "title": "Dutch Cities",
+    "shortDescription": "Beautiful Dutch architecture and canal scenes.",
+    "imageUrl": "assets/images/placeholder3.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "cities",
+    "language": "NL"
+  },
+  {
+    "id": "ma001",
+    "title": "Mandala Animals Collection",
+    "shortDescription": "Intricate animal mandalas for deep relaxation.",
+    "imageUrl": "assets/images/placeholder1.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "mandala-animals",
+    "language": "EN"
+  },
+  {
+    "id": "ma002",
+    "title": "Wildlife Mandalas",
+    "shortDescription": "Combine the beauty of wildlife with mandala art.",
+    "imageUrl": "assets/images/placeholder2.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "mandala-animals",
+    "language": "EN"
+  },
+  {
+    "id": "ma003",
+    "title": "Ocean Mandalas",
+    "shortDescription": "Sea creatures transformed into stunning mandalas.",
+    "imageUrl": "assets/images/placeholder3.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "mandala-animals",
+    "language": "EN"
+  },
+  {
+    "id": "other001",
+    "title": "Seasonal Celebrations",
+    "shortDescription": "Holiday and seasonal themed coloring fun.",
+    "imageUrl": "assets/images/placeholder1.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "other",
+    "language": "EN"
+  },
+  {
+    "id": "other002",
+    "title": "Fantasy Worlds",
+    "shortDescription": "Magical creatures and enchanted landscapes.",
+    "imageUrl": "assets/images/placeholder2.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "other",
+    "language": "EN"
+  },
+  {
+    "id": "other003",
+    "title": "Botanical Gardens",
+    "shortDescription": "Detailed botanical illustrations to color.",
+    "imageUrl": "assets/images/placeholder3.jpg",
+    "amazonUrl": "https://amazon.com",
+    "series": "other",
+    "language": "EN"
+  }
+]
