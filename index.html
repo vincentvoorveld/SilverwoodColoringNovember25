@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover beautiful coloring books by Aria Silverwood. From festive Sinterklaas to relaxing mandalas and creative city scenes - available on Amazon.">
+    <meta name="keywords" content="coloring books, Aria Silverwood, adult coloring, kids coloring, mandala, stained glass, Amazon books">
+    <meta name="author" content="Aria Silverwood">
+    
+    <meta property="og:title" content="Silverwood Coloring - Beautiful Coloring Books">
+    <meta property="og:description" content="Discover relaxing, creative and themed coloring books by Aria Silverwood. Available on Amazon.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    
+    <title>Silverwood Coloring - Beautiful Coloring Books for Every Imagination</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Silverwood Coloring</a>
+            <nav>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="series.html">Series</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Beautiful Coloring Books for Every Imagination</h1>
+            <p>Discover relaxing, creative and themed coloring books by Aria Silverwood.</p>
+            <a href="series.html" class="btn btn-primary">Explore the Series</a>
+        </section>
+
+        <h2 class="section-title">Featured Series</h2>
+        <p class="section-subtitle">Choose from our carefully crafted collections, each designed to inspire creativity and relaxation.</p>
+
+        <div class="card-grid">
+            <div class="card card-pink">
+                <div class="card-image">🎨</div>
+                <h3>Sinterklaas</h3>
+                <p>Festive and joyful coloring books celebrating the beloved Dutch tradition of Sinterklaas.</p>
+                <a href="sinterklaas.html" class="btn">View Collection</a>
+            </div>
+
+            <div class="card card-blue">
+                <div class="card-image">🪟</div>
+                <h3>Stained Glass</h3>
+                <p>Stunning stained glass inspired designs that bring light and color to your creative moments.</p>
+                <a href="stained-glass.html" class="btn">View Collection</a>
+            </div>
+
+            <div class="card card-yellow">
+                <div class="card-image">✏️</div>
+                <h3>Bold & Easy</h3>
+                <p>Simple, bold designs perfect for beginners and anyone seeking stress-free coloring fun.</p>
+                <a href="bold-easy.html" class="btn">View Collection</a>
+            </div>
+
+            <div class="card card-lavender">
+                <div class="card-image">🦋</div>
+                <h3>Mandala Animals</h3>
+                <p>Intricate animal mandalas combining wildlife beauty with meditative mandala patterns.</p>
+                <a href="mandala-animals.html" class="btn">View Collection</a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="series.html" class="btn btn-primary">Explore All Series</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-icons">
+                <span class="footer-icon" title="Amazon"></span>
+                <span class="footer-icon" title="Instagram"></span>
+                <span class="footer-icon" title="Facebook"></span>
+                <span class="footer-icon" title="TikTok"></span>
+            </div>
+            <p>&copy; 2025 Silverwood Coloring &middot; All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+
+        // Lazy loading for images
+        document.addEventListener('DOMContentLoaded', () => {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+            
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.classList.add('loaded');
+                            observer.unobserve(img);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(img => imageObserver.observe(img));
+            } else {
+                lazyImages.forEach(img => img.classList.add('loaded'));
+            }
+        });
+    </script>
+</body>
+</html>
