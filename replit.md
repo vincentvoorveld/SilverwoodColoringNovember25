@@ -40,7 +40,17 @@ A complete static website for Silverwood Coloring, a brand promoting coloring bo
 - Ready for GitHub Pages deployment
 - All relative paths for portability
 
+## Book Collection
+- **94 books** across 6 series with all real cover images uploaded
+- Bold & Easy: 25 books
+- Cities: 5 books
+- Mandala Animals: 18 books
+- Other Books: 17 books
+- Sinterklaas: 5 books
+- Stained Glass: 24 books
+
 ## Recent Changes
+- 2025-11-11: All 94 book cover images uploaded and integrated
 - 2025-11-10: Initial project setup and complete website implementation
 
 ## Deployment
