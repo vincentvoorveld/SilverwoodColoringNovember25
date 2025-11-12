@@ -63,9 +63,9 @@ header {
 }
 
 .logo-img {
-  height: 6px;
+  height: 32px;
   width: auto;
-  max-width: 30px;
+  max-width: 150px;
   display: block;
   opacity: 0.7;
 }
@@ -468,7 +468,7 @@ footer {
 }
 
 .footer-logo-img {
-  height: 8px;
+  height: 40px;
   width: auto;
   opacity: 0.6;
 }
