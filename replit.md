@@ -13,7 +13,7 @@ A complete static website for Silverwood Coloring, a brand promoting coloring bo
 ├── contact.html               # Contact and social links
 ├── sinterklaas.html          # Sinterklaas category page
 ├── stained-glass.html        # Stained Glass category page
-├── bold-easy.html            # Bold & Easy category page
+├── bold-easy.html            # Bold and Easy category page
 ├── cities.html               # Cities category page
 ├── mandala-animals.html      # Mandala Animals category page
 ├── other.html                # Other Books category page
@@ -42,14 +42,28 @@ A complete static website for Silverwood Coloring, a brand promoting coloring bo
 
 ## Book Collection
 - **94 books** across 6 series with all real cover images uploaded
-- Bold & Easy: 25 books
+- Bold and Easy: 25 books
 - Cities: 5 books
 - Mandala Animals: 18 books
 - Other Books: 17 books
 - Sinterklaas: 5 books
 - Stained Glass: 24 books
 
+## Branding & Design
+- **Logos**: Custom logo-1.png in header, logo-2.png in footer
+- **Profile**: Professional profilepicture.png on about page
+- **Card Layout**: Flex column layout with proper aspect ratio handling
+- **Book Covers**: Object-fit contain to display full covers without cropping
+- **Buttons**: Consistently aligned "View on Amazon" buttons at card bottom
+
+## Contact Information
+- **Email**: aria@silverwoodcoloring.com
+- **TikTok**: @silverwoodcoloring
+- **YouTube**: @AriaSilverwood
+- **Amazon Author Page**: B0CDCFRMGG
+
 ## Recent Changes
+- 2025-11-12: Complete branding update - integrated custom logos, profile picture, updated contact info (email, TikTok, YouTube), renamed "Bold & Easy" to "Bold and Easy", enhanced card layout for proper cover display, fixed Sinterklaas titles and image URLs
 - 2025-11-11: All 94 book cover images uploaded and integrated
 - 2025-11-10: Initial project setup and complete website implementation
 
