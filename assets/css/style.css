@@ -54,15 +54,27 @@ header {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   text-decoration: none;
 }
 
+.logo:hover .logo-text {
+  color: var(--color-pink);
+}
+
 .logo-img {
-  height: 48px;
+  height: 32px;
   width: auto;
-  max-width: 200px;
+  max-width: 150px;
   display: block;
+  opacity: 0.7;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
 }
 
 nav ul {
@@ -225,21 +237,22 @@ main {
 }
 
 .card-image {
-  aspect-ratio: 3 / 4;
-  padding: 0.75rem;
+  width: 100%;
   background: var(--color-white);
   border-radius: 12px;
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem;
 }
 
 .card-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
   border-radius: 8px;
+  display: block;
 }
 
 .card h3 {
@@ -406,12 +419,13 @@ main {
 }
 
 .profile-picture {
-  width: min(260px, 80%);
+  width: min(160px, 50%);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 8px 24px var(--color-shadow);
-  border: 6px solid var(--color-white);
+  box-shadow: 0 4px 12px var(--color-shadow);
+  border: 3px solid var(--color-white);
+  opacity: 0.9;
 }
 
 /* Category Page */
@@ -454,8 +468,9 @@ footer {
 }
 
 .footer-logo-img {
-  height: 56px;
+  height: 40px;
   width: auto;
+  opacity: 0.6;
 }
 
 .footer-links {
