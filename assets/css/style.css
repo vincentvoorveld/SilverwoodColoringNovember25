@@ -387,6 +387,16 @@ main {
   margin-right: auto;
 }
 
+.social-links-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .social-button {
   display: flex;
   align-items: center;
@@ -430,45 +440,60 @@ main {
 }
 
 .amazon-button {
-  background: linear-gradient(135deg, #fff9e6, #ffe5a0);
+  background: #232f3e;
   border-color: #ff9900;
 }
 
 .amazon-button:hover {
   border-color: #ff9900;
-  background: linear-gradient(135deg, #fff5d6, #ffd97a);
+  background: #131921;
+  box-shadow: 0 8px 30px rgba(255, 153, 0, 0.4);
 }
 
 .amazon-button .social-title {
   color: #ff9900;
 }
 
+.amazon-button .social-subtitle {
+  color: #ffffff;
+}
+
 .tiktok-button {
-  background: linear-gradient(135deg, #fff0f5, #ffc6d3);
-  border-color: #ff0050;
+  background: #000000;
+  border-color: #00f2ea;
 }
 
 .tiktok-button:hover {
-  border-color: #ff0050;
-  background: linear-gradient(135deg, #ffe6ef, #ffb3c6);
+  border-color: #00f2ea;
+  background: #000000;
+  box-shadow: 0 8px 30px rgba(0, 242, 234, 0.4);
 }
 
 .tiktok-button .social-title {
-  color: #ff0050;
+  color: #00f2ea;
+}
+
+.tiktok-button .social-subtitle {
+  color: #ffffff;
 }
 
 .youtube-button {
-  background: linear-gradient(135deg, #fff0f0, #ffcccc);
+  background: #282828;
   border-color: #ff0000;
 }
 
 .youtube-button:hover {
   border-color: #ff0000;
-  background: linear-gradient(135deg, #ffe6e6, #ffb3b3);
+  background: #181818;
+  box-shadow: 0 8px 30px rgba(255, 0, 0, 0.4);
 }
 
 .youtube-button .social-title {
   color: #ff0000;
+}
+
+.youtube-button .social-subtitle {
+  color: #ffffff;
 }
 
 .email-link {
@@ -666,6 +691,10 @@ footer p {
   .social-links-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .social-links-vertical {
+    gap: 1.25rem;
   }
 
   .social-button {
