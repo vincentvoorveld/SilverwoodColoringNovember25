@@ -1032,5 +1032,75 @@
     "series": "cities",
     "language": "english",
     "keywords": "coloring book, adult coloring, kids coloring, stained glass, light inspired, stress relief"
-  }
+  },
+{
+  "title": "Bold and Easy Art Nouveau Angels",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-angels.jpg",
+  "shortDescription": "Celestial angels with elegant Art Nouveau lines and floral details.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWCTJ49K"
+},
+{
+  "title": "Bold and Easy Art Nouveau Beautiful Women",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-women.jpg",
+  "shortDescription": "Elegant female portraits with flowing lines and decorative elements.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWCT438G"
+},
+{
+  "title": "Bold and Easy Art Nouveau Floral Designs",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-floral.jpg",
+  "shortDescription": "Botanical patterns and floral designs in classic Art Nouveau style.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWCTHXCZ"
+},
+{
+  "title": "Bold and Easy Art Nouveau Fairies",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-fairies.jpg",
+  "shortDescription": "Magical fairies surrounded by decorative floral fantasy elements.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWCWCHV4"
+},
+{
+  "title": "Bold and Easy Art Nouveau Mermaids",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-mermaids.jpg",
+  "shortDescription": "Ocean-inspired mermaids with flowing decorative Art Nouveau patterns.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWDBP79P"
+},
+{
+  "title": "Bold and Easy Art Nouveau Celestial Designs",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-celestial.jpg",
+  "shortDescription": "Sun, moon and zodiac inspired designs with mystical elements.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWCTK3SL"
+},
+{
+  "title": "Bold and Easy Art Nouveau Animals",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-animals.jpg",
+  "shortDescription": "Decorative wildlife and elegant animal designs in Art Nouveau style.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWCR6HN3"
+},
+{
+  "title": "Bold and Easy Art Nouveau Mythical Creatures",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-mythical.jpg",
+  "shortDescription": "Dragons, phoenix and fantasy creatures with decorative styling.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWD37G3P"
+},
+{
+  "title": "Bold and Easy Art Nouveau Patterns",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-patterns.jpg",
+  "shortDescription": "Relaxing repeating patterns and elegant decorative ornaments.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWCVVQSJ"
+},
+{
+  "title": "Bold and Easy Art Nouveau Garden Scenes",
+  "series": "art-nouveau",
+  "imageUrl": "assets/images/art-nouveau-garden.jpg",
+  "shortDescription": "Peaceful garden scenes with flowers, nature and flowing designs.",
+  "amazonUrl": "https://www.amazon.com/dp/B0GWD1TZ69"
+}
 ]
